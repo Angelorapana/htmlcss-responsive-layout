@@ -2,3 +2,40 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;}
+
+
+/*HEADER*/
+header{PADDING: 0.75rem;}
+
+/*DESKTOP SCREEN*/
+h1.title-style{
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  text-align: center;
+  color: rgb(218, 125, 81);
+}
+
+/*MOBILE*/
+@media screen and (min-width: 568px) {
+h1.title-style{
+text-align: center;}
+}
+
+/*PAD SCREEN*/
+@media screen and (min-width: 780px){
+h1.title-style{
+text-align: left;}
+}
+
+
+
+
+
+main{
+    display: flex;
+    justify-items: center;
+    height: 900px;
+    background-color: gray;
+}
