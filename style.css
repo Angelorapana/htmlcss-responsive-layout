@@ -32,11 +32,37 @@ text-align: left;}
 
 main{
     display: flex;
-    justify-items: center;
-    height: 900px;
-    background-color: gray;
+    flex-direction: column;
+    align-items: center;
+    height: 1500px;
+    background-color: rgb(247, 126, 126);
 }
 
+.title-subtitle{
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  padding: 1rem;
+  margin-left: 1.5rem;
+  gap: 1rem;
+}
+
+.container{
+  background-color: white;
+  height: 900px;
+  border: 1px solid black;
+}
+
+.info{padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;}
+
+ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;}
 
 
 
@@ -109,7 +135,10 @@ padding: 1rem;}
 
 
 
-/*COLORI*/
+/*COLORI-DIMENSIONI-CARATTERI*/
 
 .c-white{color:white;font-size: 18px;}
+.c-gray{color: gray;font-size: 20px;font-weight: normal;}
+.c-violet {color: rgb(125, 1, 125);font-size: 28px;}
+.bold{font-weight: bold;}
 
