@@ -34,7 +34,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(247, 126, 126);
+    background-color: rgb(228, 203, 203);
 }
 
 .title-subtitle{
@@ -48,7 +48,6 @@ main{
 
 .container-menu{
   background-color: white;
-  border: 1px solid black;
 }
 
 .info{padding: 3rem;
@@ -88,16 +87,11 @@ ul{
 .container-description{
   display: flex;
   flex-direction: column;
-  background-color: white;
-  border: 1px solid black;
+  gap: 1.5rem;
+  padding: 2rem;
 }
-        <img src="Img/tiramisu.jpg" alt="Immagine Tiramisù Piccola" class="img-description">
 
-.desc{
-background-image: url(Img/tiramisu.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
-}
+
 
 
 
@@ -115,7 +109,7 @@ gap: 1rem;
 .font-contact{
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: weight;
   font-style: normal;
 }
 
