@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;}
 
-
 /*HEADER*/
 header{PADDING: 0.75rem;}
 
@@ -75,22 +74,77 @@ ul{
     border-radius: 100%;
   }
 
-.imgfb{width:30px;  height:30px;  vertical-align: middle;}
-.imgtwitter{width: 30px;  height: 30px;  vertical-align: middle;}
-.imginsta{width: 30px;  height: 30px;  vertical-align: middle;}
-.imgpinter{width: 30px;  height: 30px;  vertical-align: middle;}
-.imgyt{width: 30px;  height: 30px;  vertical-align: middle;}
-
+.imglogo{width:30px;  height:30px;  vertical-align: middle;}
 
 /*SECONDPARTOFMAIN*/
 
 .container-description{
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  padding: 2rem;
+  display: block;
+  margin-top: 15px;
 }
 
+.container-description img{
+  width: 100%;
+  height: auto;
+}
+
+.pad-version{
+  display: none;
+}
+
+hr{
+  background-color: orange;
+  width: 30%;
+  height: 3px;}
+
+/*PAD SCREEN*/
+@media screen and (min-width: 768px) {
+  .pad-version{
+    display: block;}
+  
+    ul{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5rem;}
+  
+  .btn-pad {
+  width: 124px;
+  height: 40px;
+  margin: 1rem;
+  border: none;
+  background-color: white;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 999px;
+  }
+  .imglogo-pad{width:25px;  height:20px;  vertical-align: middle;}
+
+  .container-description{
+  width: 100%;
+  height: auto;
+  display: block ;
+  margin-bottom: 15px;
+  margin-top: 15px;}
+  .container-description img{
+    width: 50%;
+    float: left;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+}
+
+
+/*DESKTOP SCREEN*/
+@media screen and (min-width: 992px){
+  .pad-version{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+}
 
 
 
