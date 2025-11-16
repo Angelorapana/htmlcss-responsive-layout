@@ -28,13 +28,12 @@ h1.title-style{
 text-align: left;}
 }
 
-/*MAIN*/
+/*FIRSTPARTOFMAIN*/
 
 main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 1500px;
     background-color: rgb(247, 126, 126);
 }
 
@@ -47,9 +46,8 @@ main{
   gap: 1rem;
 }
 
-.container{
+.container-menu{
   background-color: white;
-  height: 900px;
   border: 1px solid black;
 }
 
@@ -63,6 +61,43 @@ ul{
   display: flex;
   flex-direction: column;
   gap: 1.25rem;}
+
+
+  /*SOCIAL BUTTON*/
+    button {
+    width: 50px;
+    height: 50px;
+    margin: 4rem;
+    border: none;
+    background-color: white;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 100%;
+  }
+
+.imgfb{width:30px;  height:30px;  vertical-align: middle;}
+.imgtwitter{width: 30px;  height: 30px;  vertical-align: middle;}
+.imginsta{width: 30px;  height: 30px;  vertical-align: middle;}
+.imgpinter{width: 30px;  height: 30px;  vertical-align: middle;}
+.imgyt{width: 30px;  height: 30px;  vertical-align: middle;}
+
+
+/*SECONDPARTOFMAIN*/
+
+.container-description{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: 1px solid black;
+}
+        <img src="Img/tiramisu.jpg" alt="Immagine Tiramisù Piccola" class="img-description">
+
+.desc{
+background-image: url(Img/tiramisu.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 
 
 
@@ -140,5 +175,7 @@ padding: 1rem;}
 .c-white{color:white;font-size: 18px;}
 .c-gray{color: gray;font-size: 20px;font-weight: normal;}
 .c-violet {color: rgb(125, 1, 125);font-size: 28px;}
-.bold{font-weight: bold;}
+.c-black{color: black;font-size: 28px;font-weight: normal}
+
+.d-flex{display: flex;}
 
