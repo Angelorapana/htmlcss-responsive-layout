@@ -14,7 +14,6 @@ h1.title-style{
   color: rgb(218, 125, 81);
   text-align: center;}
 
-
 /*DESKTOP SCREEN*/
 @media screen and (min-width: 992px){
 h1.title-style{
@@ -27,7 +26,7 @@ h1.title-style{
 text-align: left;}
 }
 
-/*FIRSTPARTOFMAIN*/
+/*MAIN*/
 
 main{
     display: flex;
@@ -59,36 +58,19 @@ ul{
   gap: 1.25rem;}
 
 
-  /*SOCIAL BUTTON*/
-    button {
-    width: 50px;
-    height: 50px;
-    margin: 4rem;
-    border: none;
-    background-color: white;
-    color: white;
-    cursor: pointer;
-    border-radius: 100%;
-    position: relative;
-  }
-
-.imglogo{width:30px;  height:30px;  vertical-align: middle;}
-
-/*SECONDPARTOFMAIN*/
-
 .container-description{
   display: block;
   margin-top: 15px;
+  margin-bottom: 50px;
 }
 
-.container-description img{
-  width: 100%;
-  height: auto;
-}
-
-.pad-visible{
-  display: none;
-}
+.container-description img{width: 60%;
+    height: auto;
+    display: flex;
+    justify-items: center;
+    justify-self: center;
+    margin-bottom: 20px;
+    margin-top: 40px;}
 
 .visible{
   display: none;
@@ -103,20 +85,17 @@ hr{
   width: 30%;
   height: 3px;}
 
+
+
 /*PAD SCREEN*/
 @media screen and (min-width: 768px) {
-
-
-  .visible{
-  display:inline-flex;
-  margin-bottom: 50px;
-  margin-top: 50px;}
+  .visible{display:inline-flex;}
 
 
   .container-menu {width: fit-content;}
   .container-menu img{width: 100%; height: auto;}
 
-    ul{
+  ul{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -131,7 +110,8 @@ hr{
   background-color: white;
   color: white;
   cursor: pointer;
-  border-radius: 999px;}
+  border-radius: 999px;
+  justify-items: baseline;}
 
   .imglogo-pad{
   width: 30px;
@@ -144,8 +124,9 @@ hr{
   height: auto;
   display: block ;
   margin-bottom: 40px;
-  margin-top: 30px;}
-
+  margin-top: 30px;
+  margin-top: 0px;
+}
   .container-description img{
     width: 35%;
     float: left;
@@ -154,7 +135,6 @@ hr{
 
 
 /*DESKTOP SCREEN*/
-
 @media screen and (min-width: 992px) {
   .description-desktop{
   display: inline-flex;
@@ -186,10 +166,19 @@ hr{
     width: 20px;
     height: 20px; 
     position: absolute;
-    top: 25%;
-    left: 15%;}
+    top: 13%;
+    right: 145px;}
 
   .c-black{padding: 1rem;}
+
+  .container-description{
+    width: 100%;
+    height: auto;
+    display: block ;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    margin-top: 0px;
+  }
 
   .container-description img{
     width:25%;
@@ -234,6 +223,13 @@ gap: 1.5rem;
 }
 
 
+/*PAD SCREEN*/
+@media screen and (min-width: 768px) {
+  .link-info a:last-child{
+  width: auto;}
+}
+
+
 /*DESKTOP SCREEN*/
 @media screen and (min-width: 992px){
 .barend{
@@ -251,14 +247,23 @@ padding: 1rem;}
 
 
 
-/*PAD SCREEN*/
-@media screen and (min-width: 768px) {
-  .link-info a:last-child{
-  width: auto;}
-}
 
 
-
+ /*SOCIAL BUTTON*/
+    button {
+    width: 50px;
+    height: 50px;
+    margin: 3rem;
+    border: none;
+    background-color: white;
+    color: white;
+    cursor: pointer;
+    border-radius: 100%;
+    position: relative;
+    justify-items: anchor-center;
+  }
+  
+.imglogo{width:30px;  height:30px;  vertical-align: middle;}
 
 
 
@@ -284,3 +289,4 @@ max-width: 100%;
 height: auto;
 display: block;
 }
+
