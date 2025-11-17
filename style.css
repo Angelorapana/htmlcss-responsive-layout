@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;}
 
+
 /*HEADER*/
 header{PADDING: 0.75rem;}
 
@@ -27,6 +28,7 @@ text-align: left;}
 }
 
 /*MAIN*/
+.container-all{padding: 5rem;}
 
 main{
     display: flex;
@@ -83,13 +85,17 @@ ul{
 hr{
   background-color: orange;
   width: 30%;
-  height: 3px;}
+  height: 3px;
+  margin-top: 5px;}
 
 
 
 /*PAD SCREEN*/
 @media screen and (min-width: 768px) {
-  .visible{display:inline-flex;}
+  .visible{
+    display:inline-flex;
+    margin-top: 20px;
+    margin-bottom: 20px;}
 
 
   .container-menu {width: fit-content;}
@@ -106,6 +112,7 @@ hr{
   width: -webkit-fill-available;
   height: 50px;
   margin: 1rem;
+  margin-top: 25px;
   border: none;
   background-color: white;
   color: white;
@@ -117,7 +124,7 @@ hr{
   width: 30px;
   height: 30px;
   vertical-align: middle;
-  margin-left: 40%;}
+  margin-left: 35%;}
 
   .container-description{
   width: 100%;
@@ -125,17 +132,23 @@ hr{
   display: block ;
   margin-bottom: 40px;
   margin-top: 30px;
-  margin-top: 0px;
 }
   .container-description img{
     width: 35%;
     float: left;
-    margin-right: 15px;}
+    margin-right: 4px;
+    margin-bottom: 15px;}
 }
 
 
 /*DESKTOP SCREEN*/
 @media screen and (min-width: 992px) {
+
+  .info{padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;}
+
   .description-desktop{
   display: inline-flex;
   color: black;
@@ -161,13 +174,13 @@ hr{
   color: white;
   cursor: pointer;
   border-radius: 999px;}
+  
+  .imglogo {
+    width: 25px;
+    height: 25px;}
 
   .imglogo-desktop{
-    width: 20px;
-    height: 20px; 
-    position: absolute;
-    top: 13%;
-    right: 145px;}
+  margin-right: 6%;}
 
   .c-black{padding: 1rem;}
 
@@ -177,7 +190,6 @@ hr{
     display: block ;
     margin-bottom: 40px;
     margin-top: 30px;
-    margin-top: 0px;
   }
 
   .container-description img{
@@ -253,13 +265,12 @@ padding: 1rem;}
     button {
     width: 50px;
     height: 50px;
-    margin: 3rem;
+    margin: 2rem;
     border: none;
     background-color: white;
     color: white;
     cursor: pointer;
     border-radius: 100%;
-    position: relative;
     justify-items: anchor-center;
   }
   
@@ -284,7 +295,7 @@ padding: 1rem;}
   font-style: normal;
 }
 
-img{
+.img-adaptive{
 max-width: 100%;
 height: auto;
 display: block;
